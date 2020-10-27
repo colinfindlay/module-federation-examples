@@ -22,6 +22,7 @@ module.exports = {
         "@angular/core": { singleton: true },
         "@angular/common": { singleton: true },
         "@angular/router": { singleton: true },
+        "projects/mdmf-nglib/src/public-api": { singleton: true }
       },
     }),
   ],

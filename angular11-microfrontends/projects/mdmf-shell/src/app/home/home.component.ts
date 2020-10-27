@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MdmfNglibService } from 'projects/mdmf-nglib/src/public-api';
 
 @Component({
   selector: "app-home",
@@ -6,7 +7,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private svc: MdmfNglibService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let count = this.svc.increment();
+    console.log("Singleton Service Invocation Count: " + count);
+  }
 }

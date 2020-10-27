@@ -15,6 +15,7 @@ module.exports = {
         "@angular/core": { eager: true, singleton: true },
         "@angular/common": { eager: true, singleton: true },
         "@angular/router": { eager: true, singleton: true },
+        "projects/mdmf-nglib/src/public-api": { eager: true, singleton: true }
       },
     }),
   ],
